@@ -1,11 +1,21 @@
 $(document).ready(
   function() {
-    $(".menu").click(
+    $("a.menu").mouseover(
       function() {
-        $("hidden").toggleClass("hidden");
+        $(this).next().show();
       }
+    );
+    
+    $(".dropdown").mouseleave(
+      function() {
+        hide();
+      }
+    );
 
-
+    $("a.menu").click(
+      function() {
+        $(this).next().addClass("hidden");
+      }
     );
   }
 

@@ -64,17 +64,10 @@ li button {
   position: relative;
 }
 
-.hidden {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
 
 
 .dropdown {
+  display: none;
   position: absolute;
   top: 40px;
   width: 150px;
