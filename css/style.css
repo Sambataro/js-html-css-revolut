@@ -64,31 +64,19 @@ li button {
   position: relative;
 }
 
-.display {
+.hidden {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
+
+
 .dropdown {
   position: absolute;
-  top: 60px;
-  width: 150px;
-  border: 1px solid black;
-  height: 500px;
-}
-
-.dropdown.two {
-  position: absolute;
-  top: 60px;
-  left: 635px;
-  width: 150px;
-  border: 1px solid black;
-  height: 500px;
-}
-
-.dropdown.three {
-  position: absolute;
-  top: 60px;
-  right: 180px;
+  top: 40px;
   width: 150px;
   border: 1px solid black;
   height: 500px;
