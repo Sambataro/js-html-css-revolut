@@ -1,14 +1,16 @@
 $(document).ready(
   function() {
-    $("a.menu").mouseover(
+    $("li").mouseenter(
       function() {
-        $(this).next().fadeIn();
+        $(this).children().first().next().fadeIn("fast")
+        console.log($(this));
       }
-    );
+    )
 
-    $(".dropdown").mouseleave(
+    .mouseleave(
       function() {
-      $(this).hide();
+        $(this).children().first().next().fadeOut("fast");
+        console.log($(this));
       }
     );
 
