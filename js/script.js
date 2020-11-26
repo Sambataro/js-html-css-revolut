@@ -2,39 +2,23 @@ $(document).ready(
   function() {
     $("li").mouseenter(
       function() {
-        $(this).children().first().next().fadeIn("fast")
+        $(this).children(".dropdown").fadeIn("fast")
         console.log($(this));
       }
     )
 
     .mouseleave(
       function() {
-        $(this).children().first().next().fadeOut("fast");
+        $(this).children(".dropdown").fadeOut("fast");
         console.log($(this));
       }
     );
 
     $("a.menu").click(
       function() {
-        $(this).next().hide();
+        $(this).next().toggle();
       }
     );
   }
-
-//   $('a.menu').each(
-//     function () { // Selezioniamo tutti i .buttons
-//  $(this).action(); //e facciamo qualcosa su ognuno
-// // $(this) sarà un elemento jQuery
-// // che rappresenta, uno alla volta, tutti i button
-// });
-
-
-
-
-
-
-
-
-
 
 );
